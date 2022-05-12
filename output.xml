@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0 (Python 3.10.3 on win32)" generated="20220512 10:44:52.295" rpa="false" schemaversion="3">
+<robot generator="Robot 5.0 (Python 3.10.3 on win32)" generated="20220512 11:03:52.271" rpa="false" schemaversion="3">
 <suite id="s1" name="Verify Invalid Credential Suite" source="C:\Users\kavit\Downloads\robot_project\project_democart\1.4 login_suite\verify_invalid_credential_suite.robot">
 <test id="s1-t1" name="TC1" line="12">
 <kw name="Launch Browser" library="common_functionality" type="SETUP">
@@ -7,86 +7,87 @@
 <arg>path</arg>
 <arg>${EXECDIR}${/}driver</arg>
 <doc>Appends given ``values`` to environment variable ``name``.</doc>
-<msg timestamp="20220512 10:44:52.446" level="INFO">Environment variable 'path' set to value 'C:\Program Files\Common Files\Oracle\Java\javapath;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\MinGW\mingw32\bin;C:\MinGW\mingw32\bin;C:\Users\kavit\AppData\Local\Programs\Microsoft VS Code\MinGW\mingw32\bin;C:\Users\kavit\AppData\Local\Programs\Microsoft VS Code\MinGW\bin;C:\Program Files\Git\cmd;C;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Users\kavit\AppData\Local\Programs\Python\Python310;C:\Users\kavit\AppData\Local\Programs\Python\Python310\Scripts;C:\Users\kavit\AppData\Local\Programs\Python\Python310;C:\Users\kavit\AppData\Local\Programs\Python\Python310\Scripts;C:\Users\kavit\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\kavit\AppData\Local\Programs\Python\Python310\;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\kavit\AppData\Local\Microsoft\WindowsApps;C:\Users\kavit\AppData\Local\Programs\Microsoft VS Code\bin;C:\MinGW\bin;C:\Program Files\Cppcheck;;C:\Program Files\JetBrains\PyCharm Community Edition 2022.1\bin;;C:\Users\kavit\Downloads\robot_project\project_democart\driver'.</msg>
-<status status="PASS" starttime="20220512 10:44:52.446" endtime="20220512 10:44:52.446"/>
+<msg timestamp="20220512 11:03:52.456" level="INFO">Environment variable 'path' set to value 'C:\Program Files\Common Files\Oracle\Java\javapath;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\MinGW\mingw32\bin;C:\MinGW\mingw32\bin;C:\Users\kavit\AppData\Local\Programs\Microsoft VS Code\MinGW\mingw32\bin;C:\Users\kavit\AppData\Local\Programs\Microsoft VS Code\MinGW\bin;C:\Program Files\Git\cmd;C;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Users\kavit\AppData\Local\Programs\Python\Python310;C:\Users\kavit\AppData\Local\Programs\Python\Python310\Scripts;C:\Users\kavit\AppData\Local\Programs\Python\Python310;C:\Users\kavit\AppData\Local\Programs\Python\Python310\Scripts;C:\Users\kavit\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\kavit\AppData\Local\Programs\Python\Python310\;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\kavit\AppData\Local\Microsoft\WindowsApps;C:\Users\kavit\AppData\Local\Programs\Microsoft VS Code\bin;C:\MinGW\bin;C:\Program Files\Cppcheck;;C:\Program Files\JetBrains\PyCharm Community Edition 2022.1\bin;;C:\Users\kavit\Downloads\robot_project\project_democart\driver'.</msg>
+<status status="PASS" starttime="20220512 11:03:52.456" endtime="20220512 11:03:52.456"/>
 </kw>
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>browser=${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220512 10:44:52.446" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
-<status status="PASS" starttime="20220512 10:44:52.446" endtime="20220512 10:44:53.623"/>
+<msg timestamp="20220512 11:03:52.457" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<status status="PASS" starttime="20220512 11:03:52.456" endtime="20220512 11:03:53.721"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20220512 10:44:53.624" endtime="20220512 10:44:53.751"/>
+<status status="PASS" starttime="20220512 11:03:53.722" endtime="20220512 11:03:53.849"/>
 </kw>
 <kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
 <arg>30s</arg>
 <doc>Sets the implicit wait value used by Selenium.</doc>
-<status status="PASS" starttime="20220512 10:44:53.751" endtime="20220512 10:44:53.752"/>
+<status status="PASS" starttime="20220512 11:03:53.849" endtime="20220512 11:03:53.850"/>
 </kw>
 <kw name="Set Screenshot Directory" library="SeleniumLibrary">
 <arg>${EXECDIR}${/}screenshot</arg>
 <doc>Sets the directory for captured screenshots.</doc>
-<status status="PASS" starttime="20220512 10:44:53.752" endtime="20220512 10:44:53.752"/>
+<status status="PASS" starttime="20220512 11:03:53.850" endtime="20220512 11:03:53.851"/>
 </kw>
 <kw name="Go To" library="SeleniumLibrary">
 <arg>url=https://demo.opencart.com/</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20220512 10:44:53.753" level="INFO">Opening url 'https://demo.opencart.com/'</msg>
-<status status="PASS" starttime="20220512 10:44:53.752" endtime="20220512 10:44:55.989"/>
+<msg timestamp="20220512 11:03:53.851" level="INFO">Opening url 'https://demo.opencart.com/'</msg>
+<status status="PASS" starttime="20220512 11:03:53.851" endtime="20220512 11:03:56.241"/>
 </kw>
-<status status="PASS" starttime="20220512 10:44:52.445" endtime="20220512 10:44:55.989"/>
+<status status="PASS" starttime="20220512 11:03:52.456" endtime="20220512 11:03:56.242"/>
 </kw>
 <kw name="valid Credential Template">
 <arg>kaviarasu17@gmail.com</arg>
 <arg>123456</arg>
+<arg>Warning: No match for E-Mail Address and/or Password.</arg>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath=//a[@title='My Account']</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220512 10:44:55.990" level="INFO">Clicking element 'xpath=//a[@title='My Account']'.</msg>
-<status status="PASS" starttime="20220512 10:44:55.990" endtime="20220512 10:44:56.026"/>
+<msg timestamp="20220512 11:03:56.243" level="INFO">Clicking element 'xpath=//a[@title='My Account']'.</msg>
+<status status="PASS" starttime="20220512 11:03:56.243" endtime="20220512 11:03:56.292"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>link=Login</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220512 10:44:56.026" level="INFO">Clicking element 'link=Login'.</msg>
-<status status="PASS" starttime="20220512 10:44:56.026" endtime="20220512 10:44:57.226"/>
+<msg timestamp="20220512 11:03:56.292" level="INFO">Clicking element 'link=Login'.</msg>
+<status status="PASS" starttime="20220512 11:03:56.292" endtime="20220512 11:03:57.496"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>id=input-email</arg>
 <arg>${email_id}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220512 10:44:57.226" level="INFO">Typing text 'kaviarasu17@gmail.com' into text field 'id=input-email'.</msg>
-<status status="PASS" starttime="20220512 10:44:57.226" endtime="20220512 10:44:57.292"/>
+<msg timestamp="20220512 11:03:57.497" level="INFO">Typing text 'kaviarasu17@gmail.com' into text field 'id=input-email'.</msg>
+<status status="PASS" starttime="20220512 11:03:57.496" endtime="20220512 11:03:57.567"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>id=input-password</arg>
 <arg>${password}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220512 10:44:57.293" level="INFO">Typing text '123456' into text field 'id=input-password'.</msg>
-<status status="PASS" starttime="20220512 10:44:57.292" endtime="20220512 10:44:57.341"/>
+<msg timestamp="20220512 11:03:57.567" level="INFO">Typing text '123456' into text field 'id=input-password'.</msg>
+<status status="PASS" starttime="20220512 11:03:57.567" endtime="20220512 11:03:57.616"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath=//input[@type='submit']</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220512 10:44:57.341" level="INFO">Clicking element 'xpath=//input[@type='submit']'.</msg>
-<status status="PASS" starttime="20220512 10:44:57.341" endtime="20220512 10:44:58.766"/>
+<msg timestamp="20220512 11:03:57.616" level="INFO">Clicking element 'xpath=//input[@type='submit']'.</msg>
+<status status="PASS" starttime="20220512 11:03:57.616" endtime="20220512 11:03:59.004"/>
 </kw>
 <kw name="Element Text Should Be" library="SeleniumLibrary">
 <arg>xpath=//div[@class='alert alert-danger alert-dismissible']</arg>
-<arg>Warning: No match for E-Mail Address and/or Password.</arg>
+<arg>${excpeted_error}</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<msg timestamp="20220512 10:44:58.767" level="INFO">Verifying element 'xpath=//div[@class='alert alert-danger alert-dismissible']' contains exact text 'Warning: No match for E-Mail Address and/or Password.'.</msg>
-<status status="PASS" starttime="20220512 10:44:58.767" endtime="20220512 10:44:58.785"/>
+<msg timestamp="20220512 11:03:59.005" level="INFO">Verifying element 'xpath=//div[@class='alert alert-danger alert-dismissible']' contains exact text 'Warning: No match for E-Mail Address and/or Password.'.</msg>
+<status status="PASS" starttime="20220512 11:03:59.005" endtime="20220512 11:03:59.024"/>
 </kw>
-<status status="PASS" starttime="20220512 10:44:55.989" endtime="20220512 10:44:58.785"/>
+<status status="PASS" starttime="20220512 11:03:56.242" endtime="20220512 11:03:59.024"/>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20220512 10:44:58.785" endtime="20220512 10:45:00.864"/>
+<status status="PASS" starttime="20220512 11:03:59.024" endtime="20220512 11:04:01.101"/>
 </kw>
-<status status="PASS" starttime="20220512 10:44:52.445" endtime="20220512 10:45:00.864"/>
+<status status="PASS" starttime="20220512 11:03:52.455" endtime="20220512 11:04:01.101"/>
 </test>
 <test id="s1-t2" name="TC2" line="13">
 <kw name="Launch Browser" library="common_functionality" type="SETUP">
@@ -94,90 +95,91 @@
 <arg>path</arg>
 <arg>${EXECDIR}${/}driver</arg>
 <doc>Appends given ``values`` to environment variable ``name``.</doc>
-<msg timestamp="20220512 10:45:00.866" level="INFO">Environment variable 'path' set to value 'C:\Program Files\Common Files\Oracle\Java\javapath;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\MinGW\mingw32\bin;C:\MinGW\mingw32\bin;C:\Users\kavit\AppData\Local\Programs\Microsoft VS Code\MinGW\mingw32\bin;C:\Users\kavit\AppData\Local\Programs\Microsoft VS Code\MinGW\bin;C:\Program Files\Git\cmd;C;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Users\kavit\AppData\Local\Programs\Python\Python310;C:\Users\kavit\AppData\Local\Programs\Python\Python310\Scripts;C:\Users\kavit\AppData\Local\Programs\Python\Python310;C:\Users\kavit\AppData\Local\Programs\Python\Python310\Scripts;C:\Users\kavit\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\kavit\AppData\Local\Programs\Python\Python310\;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\kavit\AppData\Local\Microsoft\WindowsApps;C:\Users\kavit\AppData\Local\Programs\Microsoft VS Code\bin;C:\MinGW\bin;C:\Program Files\Cppcheck;;C:\Program Files\JetBrains\PyCharm Community Edition 2022.1\bin;;C:\Users\kavit\Downloads\robot_project\project_democart\driver;C:\Users\kavit\Downloads\robot_project\project_democart\driver'.</msg>
-<status status="PASS" starttime="20220512 10:45:00.866" endtime="20220512 10:45:00.866"/>
+<msg timestamp="20220512 11:04:01.103" level="INFO">Environment variable 'path' set to value 'C:\Program Files\Common Files\Oracle\Java\javapath;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\MinGW\mingw32\bin;C:\MinGW\mingw32\bin;C:\Users\kavit\AppData\Local\Programs\Microsoft VS Code\MinGW\mingw32\bin;C:\Users\kavit\AppData\Local\Programs\Microsoft VS Code\MinGW\bin;C:\Program Files\Git\cmd;C;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Users\kavit\AppData\Local\Programs\Python\Python310;C:\Users\kavit\AppData\Local\Programs\Python\Python310\Scripts;C:\Users\kavit\AppData\Local\Programs\Python\Python310;C:\Users\kavit\AppData\Local\Programs\Python\Python310\Scripts;C:\Users\kavit\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\kavit\AppData\Local\Programs\Python\Python310\;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\kavit\AppData\Local\Microsoft\WindowsApps;C:\Users\kavit\AppData\Local\Programs\Microsoft VS Code\bin;C:\MinGW\bin;C:\Program Files\Cppcheck;;C:\Program Files\JetBrains\PyCharm Community Edition 2022.1\bin;;C:\Users\kavit\Downloads\robot_project\project_democart\driver;C:\Users\kavit\Downloads\robot_project\project_democart\driver'.</msg>
+<status status="PASS" starttime="20220512 11:04:01.103" endtime="20220512 11:04:01.103"/>
 </kw>
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>browser=${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220512 10:45:00.867" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
-<status status="PASS" starttime="20220512 10:45:00.866" endtime="20220512 10:45:01.973"/>
+<msg timestamp="20220512 11:04:01.103" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<status status="PASS" starttime="20220512 11:04:01.103" endtime="20220512 11:04:02.137"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20220512 10:45:01.974" endtime="20220512 10:45:02.088"/>
+<status status="PASS" starttime="20220512 11:04:02.138" endtime="20220512 11:04:02.266"/>
 </kw>
 <kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
 <arg>30s</arg>
 <doc>Sets the implicit wait value used by Selenium.</doc>
-<status status="PASS" starttime="20220512 10:45:02.088" endtime="20220512 10:45:02.089"/>
+<status status="PASS" starttime="20220512 11:04:02.266" endtime="20220512 11:04:02.267"/>
 </kw>
 <kw name="Set Screenshot Directory" library="SeleniumLibrary">
 <arg>${EXECDIR}${/}screenshot</arg>
 <doc>Sets the directory for captured screenshots.</doc>
-<status status="PASS" starttime="20220512 10:45:02.089" endtime="20220512 10:45:02.090"/>
+<status status="PASS" starttime="20220512 11:04:02.267" endtime="20220512 11:04:02.267"/>
 </kw>
 <kw name="Go To" library="SeleniumLibrary">
 <arg>url=https://demo.opencart.com/</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20220512 10:45:02.090" level="INFO">Opening url 'https://demo.opencart.com/'</msg>
-<status status="PASS" starttime="20220512 10:45:02.090" endtime="20220512 10:45:03.966"/>
+<msg timestamp="20220512 11:04:02.267" level="INFO">Opening url 'https://demo.opencart.com/'</msg>
+<status status="PASS" starttime="20220512 11:04:02.267" endtime="20220512 11:04:04.099"/>
 </kw>
-<status status="PASS" starttime="20220512 10:45:00.866" endtime="20220512 10:45:03.966"/>
+<status status="PASS" starttime="20220512 11:04:01.102" endtime="20220512 11:04:04.099"/>
 </kw>
 <kw name="valid Credential Template">
 <arg>kavi11@gmail.com</arg>
 <arg>111223</arg>
+<arg>Warning: No match for E-Mail Address and/or Password.</arg>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath=//a[@title='My Account']</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220512 10:45:03.968" level="INFO">Clicking element 'xpath=//a[@title='My Account']'.</msg>
-<status status="PASS" starttime="20220512 10:45:03.967" endtime="20220512 10:45:04.003"/>
+<msg timestamp="20220512 11:04:04.100" level="INFO">Clicking element 'xpath=//a[@title='My Account']'.</msg>
+<status status="PASS" starttime="20220512 11:04:04.100" endtime="20220512 11:04:04.142"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>link=Login</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220512 10:45:04.003" level="INFO">Clicking element 'link=Login'.</msg>
-<status status="PASS" starttime="20220512 10:45:04.003" endtime="20220512 10:45:05.246"/>
+<msg timestamp="20220512 11:04:04.143" level="INFO">Clicking element 'link=Login'.</msg>
+<status status="PASS" starttime="20220512 11:04:04.142" endtime="20220512 11:04:05.383"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>id=input-email</arg>
 <arg>${email_id}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220512 10:45:05.246" level="INFO">Typing text 'kavi11@gmail.com' into text field 'id=input-email'.</msg>
-<status status="PASS" starttime="20220512 10:45:05.246" endtime="20220512 10:45:05.306"/>
+<msg timestamp="20220512 11:04:05.384" level="INFO">Typing text 'kavi11@gmail.com' into text field 'id=input-email'.</msg>
+<status status="PASS" starttime="20220512 11:04:05.384" endtime="20220512 11:04:05.459"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>id=input-password</arg>
 <arg>${password}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220512 10:45:05.306" level="INFO">Typing text '111223' into text field 'id=input-password'.</msg>
-<status status="PASS" starttime="20220512 10:45:05.306" endtime="20220512 10:45:05.353"/>
+<msg timestamp="20220512 11:04:05.459" level="INFO">Typing text '111223' into text field 'id=input-password'.</msg>
+<status status="PASS" starttime="20220512 11:04:05.459" endtime="20220512 11:04:05.509"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath=//input[@type='submit']</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220512 10:45:05.353" level="INFO">Clicking element 'xpath=//input[@type='submit']'.</msg>
-<status status="PASS" starttime="20220512 10:45:05.353" endtime="20220512 10:45:06.770"/>
+<msg timestamp="20220512 11:04:05.510" level="INFO">Clicking element 'xpath=//input[@type='submit']'.</msg>
+<status status="PASS" starttime="20220512 11:04:05.509" endtime="20220512 11:04:06.939"/>
 </kw>
 <kw name="Element Text Should Be" library="SeleniumLibrary">
 <arg>xpath=//div[@class='alert alert-danger alert-dismissible']</arg>
-<arg>Warning: No match for E-Mail Address and/or Password.</arg>
+<arg>${excpeted_error}</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<msg timestamp="20220512 10:45:06.771" level="INFO">Verifying element 'xpath=//div[@class='alert alert-danger alert-dismissible']' contains exact text 'Warning: No match for E-Mail Address and/or Password.'.</msg>
-<status status="PASS" starttime="20220512 10:45:06.770" endtime="20220512 10:45:06.789"/>
+<msg timestamp="20220512 11:04:06.940" level="INFO">Verifying element 'xpath=//div[@class='alert alert-danger alert-dismissible']' contains exact text 'Warning: No match for E-Mail Address and/or Password.'.</msg>
+<status status="PASS" starttime="20220512 11:04:06.940" endtime="20220512 11:04:06.957"/>
 </kw>
-<status status="PASS" starttime="20220512 10:45:03.967" endtime="20220512 10:45:06.790"/>
+<status status="PASS" starttime="20220512 11:04:04.099" endtime="20220512 11:04:06.957"/>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20220512 10:45:06.790" endtime="20220512 10:45:08.857"/>
+<status status="PASS" starttime="20220512 11:04:06.958" endtime="20220512 11:04:09.030"/>
 </kw>
-<status status="PASS" starttime="20220512 10:45:00.865" endtime="20220512 10:45:08.857"/>
+<status status="PASS" starttime="20220512 11:04:01.102" endtime="20220512 11:04:09.030"/>
 </test>
 <doc>This suite will handle invalid credential
 test - TC_OH_2</doc>
-<status status="PASS" starttime="20220512 10:44:52.296" endtime="20220512 10:45:08.859"/>
+<status status="PASS" starttime="20220512 11:03:52.272" endtime="20220512 11:04:09.031"/>
 </suite>
 <statistics>
 <total>
