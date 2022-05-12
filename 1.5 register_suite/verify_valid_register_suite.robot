@@ -3,6 +3,7 @@ Documentation   this suite will handle valid credential
 
 Resource    ../1.1 resource/common_functionality.resource
 Test Setup   Launch Browser
+Test Teardown  Close Browser
 Test Template     valid register template
 
 

@@ -4,7 +4,7 @@ Documentation   This suite will handle valid credential
 
 Test Setup   Launch Browser
 Resource    ../1.1 resource/common_functionality.resource
-
+Test Teardown    Close Browser
 Test Template   valid Credential Template
 
 Library   DataDriver   file=../1.3 test_data/Book1.xlsx  sheet_name=valid_credential

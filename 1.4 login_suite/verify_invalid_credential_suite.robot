@@ -4,10 +4,9 @@ Documentation   This suite will handle invalid credential
 
 Test Setup   Launch Browser
 Resource    ../1.1 resource/common_functionality.resource
-
+Test Teardown   Close Browser
 Test Template   valid Credential Template
 
-Library   DataDriver   file=../1.3 test_data/Book1.xlsx  sheet_name=valid_credential
 
 *** Test Cases ***
 TC1  kaviarasu17@gmail.com  123456
@@ -20,3 +19,4 @@ valid Credential Template
     Input Text       id=input-email    ${email_id}
     Input Text       id=input-password    ${password}
     Click Element    xpath=//input[@type='submit']
+    Element Text Should Be    xpath=//div[@class='alert alert-danger alert-dismissible']     Warning: No match for E-Mail Address and/or Password.
